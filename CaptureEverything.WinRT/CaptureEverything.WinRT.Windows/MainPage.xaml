@@ -8,6 +8,34 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto" MinHeight="200"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto" MinHeight="200"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
 
+        <Button Click="TakePicture_Click" Content="Capture Photo" HorizontalAlignment="Stretch" Grid.Row="0"/>
+
+        <Border BorderBrush="White" BorderThickness="3" Grid.Row="2">
+            <Image x:Name="CapturedPhoto" AutomationProperties.Name="A placeholder image" Source="Assets/placeholder-sdk.png" HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="392" Stretch="Fill" />
+        </Border>
+
+        <TextBox x:Name="PhotoFilePath" HorizontalAlignment="Stretch" Grid.Row="4" IsReadOnly="True"/>
+
+        <Button Click="TakeVideo_Click" Content="Capture Video" HorizontalAlignment="Stretch" Grid.Row="6"/>
+
+        <Border BorderBrush="White" BorderThickness="3" Grid.Row="8">
+            <MediaElement x:Name="CapturedVideo" Width="320" Height="240" AreTransportControlsEnabled="True" Visibility="Collapsed"/>
+        </Border>
+
+        <TextBox x:Name="VideoFilePath" HorizontalAlignment="Stretch" Grid.Row="10" IsReadOnly="True"/>
     </Grid>
 </Page>
