@@ -9,15 +9,15 @@
     <Import_RootNamespace>CaptureEverything.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)PhotoCaptureUserControl.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\PhotoCaptureUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)VideoCaptureUserControl.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Views\VideoCaptureUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -26,13 +26,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PhotoCaptureViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VideoCaptureViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)PhotoCaptureUserControl.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PhotoCaptureUserControl.xaml.cs">
       <DependentUpon>PhotoCaptureUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)VideoCaptureUserControl.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VideoCaptureUserControl.xaml.cs">
       <DependentUpon>VideoCaptureUserControl.xaml</DependentUpon>
     </Compile>
   </ItemGroup>

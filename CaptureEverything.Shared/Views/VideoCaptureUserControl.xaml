@@ -21,7 +21,7 @@
         <Button Click="TakeVideo_Click" Content="Capture Video" HorizontalAlignment="Stretch" Grid.Row="0"/>
 
         <Border BorderBrush="White" BorderThickness="3" Grid.Row="2">
-            <MediaElement x:Name="CapturedVideo" Width="320" Height="240" AreTransportControlsEnabled="True" Visibility="Collapsed"/>
+            <MediaElement x:Name="CapturedVideo" Width="320" Height="240" AreTransportControlsEnabled="True"/>
         </Border>
 
         <TextBox x:Name="VideoFilePath" HorizontalAlignment="Stretch" Grid.Row="4" IsReadOnly="True"/>
