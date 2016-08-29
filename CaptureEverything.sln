@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UWP", "UWP", "{4F33DFDF-FA5E-455D-B649-8879FA104F6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F6AEF94C-6224-4617-BCA7-B97DDE1EC0E4}"
+	ProjectSection(SolutionItems) = preProject
+		CaptureEverything.ruleset = CaptureEverything.ruleset
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptureEverything.Common", "CaptureEverything.Common\CaptureEverything.Common.csproj", "{E6183FD0-A866-474E-89E0-1C463DE6227B}"
 EndProject

@@ -1,15 +1,15 @@
-﻿using System;
-using Windows.Foundation;
-using Windows.Media.Capture;
-using Windows.Storage;
-using Windows.Storage.Streams;
-using Windows.UI.Popups;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Imaging;
-
-namespace CaptureEverything.WinRT
+﻿namespace CaptureEverything.WinRT
 {
+    using System;
+    using Windows.Foundation;
+    using Windows.Media.Capture;
+    using Windows.Storage;
+    using Windows.Storage.Streams;
+    using Windows.UI.Popups;
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Controls;
+    using Windows.UI.Xaml.Media.Imaging;
+
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -44,14 +44,14 @@ namespace CaptureEverything.WinRT
                 }
                 else
                 {
-                    await (new MessageDialog("No picture was taken...")).ShowAsync();
+                    await new MessageDialog("No picture was taken...").ShowAsync();
                 }
             }
             catch (Exception ex)
             {
                 string message = string.Format("Failed to capture picture: {0}", ex.Message);
 
-                await (new MessageDialog(message)).ShowAsync();
+                await new MessageDialog(message).ShowAsync();
             }
         }
 
@@ -76,14 +76,14 @@ namespace CaptureEverything.WinRT
                 }
                 else
                 {
-                    await (new MessageDialog("No Video was captured...")).ShowAsync();
+                    await new MessageDialog("No Video was captured...").ShowAsync();
                 }
             }
             catch (Exception ex)
             {
                 string message = string.Format("Failed to capture video: {0}", ex.Message);
 
-                await (new MessageDialog(message)).ShowAsync();
+                await new MessageDialog(message).ShowAsync();
             }
         }
     }

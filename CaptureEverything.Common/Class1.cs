@@ -2,30 +2,30 @@
 {
     public class CameraCaptureHelper
     {
-        //public async Task<StorageFile> TakePhotoAsync()
-        //{
+        // public async Task<StorageFile> TakePhotoAsync()
+        // {
         //    try
         //    {
         //        var c amera = new CameraCaptureUI();
 
-        //        //var aspectRatio = new Size(16, 9);
+        // //var aspectRatio = new Size(16, 9);
 
-        //       // camera.PhotoSettings.CroppedAspectRatio = aspectRatio;
+        // // camera.PhotoSettings.CroppedAspectRatio = aspectRatio;
 
-        //        var photoFile = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
+        // var photoFile = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
 
-        //        if (photoFile != null)
+        // if (photoFile != null)
         //        {
         //            var bitmapImage = new BitmapImage();
 
-        //            using (IRandomAccessStream fileStream = await photoFile.OpenAsync(FileAccessMode.Read))
+        // using (IRandomAccessStream fileStream = await photoFile.OpenAsync(FileAccessMode.Read))
         //            {
         //                bitmapImage.SetSource(fileStream);
         //            }
 
-        //            this.CapturedPhoto.Source = bitmapImage;
+        // this.CapturedPhoto.Source = bitmapImage;
 
-        //            this.PhotoFilePath.Text = photoFile.Path;
+        // this.PhotoFilePath.Text = photoFile.Path;
         //        }
         //        else
         //        {
@@ -36,8 +36,8 @@
         //    {
         //        string message = string.Format("Failed to capture picture: {0}", ex.Message);
 
-        //        await(new MessageDialog(message)).ShowAsync();
+        // await(new MessageDialog(message)).ShowAsync();
         //    }
-        //}
+        // }
     }
 }

@@ -1,17 +1,15 @@
-﻿using System;
-using Windows.Foundation;
-using Windows.Media.Capture;
-using Windows.Storage;
-using Windows.Storage.Streams;
-using Windows.UI.Popups;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Imaging;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace CaptureEverything.UWP
+﻿namespace CaptureEverything.UWP
 {
+    using System;
+    using Windows.Foundation;
+    using Windows.Media.Capture;
+    using Windows.Storage;
+    using Windows.Storage.Streams;
+    using Windows.UI.Popups;
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Controls;
+    using Windows.UI.Xaml.Media.Imaging;
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -49,14 +47,14 @@ namespace CaptureEverything.UWP
                 }
                 else
                 {
-                    await (new MessageDialog("No picture was taken...")).ShowAsync();
+                    await new MessageDialog("No picture was taken...").ShowAsync();
                 }
             }
             catch (Exception ex)
             {
                 string message = string.Format("Failed to capture picture: {0}", ex.Message);
 
-                await (new MessageDialog(message)).ShowAsync();
+                await new MessageDialog(message).ShowAsync();
             }
         }
 
@@ -81,14 +79,14 @@ namespace CaptureEverything.UWP
                 }
                 else
                 {
-                    await (new MessageDialog("No Video was captured...")).ShowAsync();
+                    await new MessageDialog("No Video was captured...").ShowAsync();
                 }
             }
             catch (Exception ex)
             {
                 string message = string.Format("Failed to capture video: {0}", ex.Message);
 
-                await (new MessageDialog(message)).ShowAsync();
+                await new MessageDialog(message).ShowAsync();
             }
         }
     }
