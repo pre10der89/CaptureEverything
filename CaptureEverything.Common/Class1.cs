@@ -2,6 +2,9 @@
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
+//Added in master
+//Changed in master
+
 namespace CaptureEverything.Common
 {
 #pragma warning disable SA1600 // Elements must be documented
